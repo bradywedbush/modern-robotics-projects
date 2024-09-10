@@ -46,8 +46,8 @@ for r in Rsto6 :
     # determine if omg from AxisAng3 function is different from the omg_target
     if np.linalg.norm(omg + omg_targ[i]) <= 1 : omg, theta = (np.absolute(omg), -theta)
 
-    # print in csv format with no comma at the end
-    s = ", " * (i!=(n-1))
+    # print in csv format with no comma and a new line at the end
+    s = ", " * (i!=(n-1)) + "/n/n" * (i==(n-1))
     print(f"{theta: .3f}", end= s)
 
     i += 1
