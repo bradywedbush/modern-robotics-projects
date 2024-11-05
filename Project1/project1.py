@@ -55,3 +55,12 @@ for r in Rsto6 :
     # DEBUGGING
     # print(f'Omega {i} = {omg}')
     # print(f'Theta {i} = {theta: .2f} rad')
+
+# This file prints to system:
+
+# Rsb = 
+# [[-0.9418 -0.0859  0.3249]
+#  [-0.3249 -0.0151 -0.9456]
+#  [ 0.0861 -0.9962 -0.0136]]
+# Joint angle inputs:
+# -2.967, -0.785, -1.571, -0.873,  0.157,  0.000
