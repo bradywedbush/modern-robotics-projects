@@ -1,0 +1,125 @@
+   <ui closeable="false" on-close="closeEventHandler" resizable="true">
+     <tabs>
+
+	   <tab title="Enter Config and SE(3) Value">
+		 <group>
+		   <group layout="vbox">
+			 <label text="<big> Configuration Entry:</big>" wordwrap="false" style="font-weight: bold;"/>
+			 <label text="Enter 6 comma-separated angles" />
+			 <edit value="" id="7006" oneditingfinished="fulljointEntry" />
+			 <label value="" id="5006" wordwrap="false" />
+			 <label text="<big> Current configuration:</big>" id="6007" wordwrap="false" style="font-weight: bold;"/>
+			 <group layout="vbox">
+			   <label value="" id="1237" wordwrap="true" />
+			 </group>
+			 <label text="<small> Messages:</small>" id="6006" wordwrap="false" style="font-weight: bold;"/>
+			 <group layout="vbox">
+			   <label value="" id="1236" wordwrap="true" />
+			 </group>
+		   </group>
+		   <group>
+			 <!-- <group> -->
+			   <label text="<big> Current SE(3):</big>" id="6008" wordwrap="false" style="font-weight: bold;"/>
+			   <button text="Calculate SE(3) transform:" on-click="calcSE3" id="1235"/>
+			   <label text="T(?) = " wordwrap="false" />
+			   <label text="" id="1234" wordwrap="false" />
+			 <!-- </group> -->
+			  <!-- <group> -->
+			  <!--   <label text="<big> Settings:</big>" wordwrap="false" style="font-weight: bold;"/> -->
+			  <!--   <checkbox text="Use degrees instead of radians?" checked="false" on-change="toggleRadians" /> -->
+			  <!-- </group> -->
+		   </group>
+           <stretch />
+		 </group>
+	   </tab>
+
+	   
+       <tab title="Joint Angle Sliders">
+		 <group layout="grid" >
+           <group>
+			 <group layout="grid">
+               <label text="<big> Joint 1:</big>" id="6000" wordwrap="false" style="font-weight: bold;"/>
+               <label text="Reference =  0.000" id="3000" wordwrap="false" />
+               <!-- <label text="Actual =  0.000" id="5000" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4000" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7000" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+		   
+		   <group>
+			 <group layout="grid">
+			   <label text="<big> Joint 4:</big>" id="6003" wordwrap="false" style="font-weight: bold;"/>
+			   <label text="Reference =  0.000" id="3003" wordwrap="false" />
+			   <!-- <label text="Actual =  0.000" id="5003" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4003" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7003" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+
+		   <br/>
+		   
+		   <group>
+			 <group layout="grid">
+               <label text="<big> Joint 2:</big>" id="6001" wordwrap="false" style="font-weight: bold;"/>
+               <label text="Reference =  0.000" id="3001" wordwrap="false" />
+               <!-- <label text="Actual =  0.000" id="5001" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4001" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7001" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+
+		   
+		   <group>
+			 <group layout="grid">
+			   <label text="<big> Joint 5:</big>" id="6004" wordwrap="false" style="font-weight: bold;"/>
+			   <label text="Reference =  0.000" id="3004" wordwrap="false" />
+			   <!-- <label text="Actual =  0.000" id="5004" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4004" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7004" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+
+		   <br/>
+		   
+		   <group>
+			 <group layout="grid">
+			   <label text="<big> Joint 3:</big>" id="6002" wordwrap="false" style="font-weight: bold;"/>
+			   <label text="Reference =  0.000" id="3002" wordwrap="false" />
+			   <!-- <label text="Actual =  0.000" id="5002" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4002" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7002" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+
+		   <group>
+			 <group layout="grid">
+			   <label text="<big> Joint 6:</big>" id="6005" wordwrap="false" style="font-weight: bold;"/>
+			   <label text="Reference =  0.000" id="3005" wordwrap="false" />
+			   <!-- <label text="Actual =  0.000" id="5005" wordwrap="false" /> -->
+			 </group>
+			 <hslider id="4005" tick-position="above" tick-interval="1000" minimum="-6280" maximum="6280" on-change="sliderChange" />
+			 <group layout="grid">
+			   <label text="Enter angle:" />
+			   <edit value="" id="7005" oneditingfinished="jointEntry" />
+			 </group>
+		   </group>
+		 </group>
+	   </tab>
+
+    </tabs>
+</ui>
